@@ -5875,7 +5875,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 #sticky-sidebar {
   position: fixed;
-  max-width: 5%;
+  width: 5.7vw;
   z-index: 10; }
 
 html {
@@ -5939,3 +5939,44 @@ html {
   margin-right: 8%;
   z-index: 1;
   position: relative; }
+
+.arrow {
+  position: absolute;
+  bottom: 5%;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  z-index: 2; }
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-moz-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+@-o-keyframes blink {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+.blink {
+  -webkit-animation: blink 1s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation: blink 1s;
+  -moz-animation-iteration-count: infinite;
+  -o-animation: blink 1s;
+  -o-animation-iteration-count: infinite; }
