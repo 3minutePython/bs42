@@ -11,7 +11,8 @@ $enable-rounded: false;
 $theme-colors: (
   // "primary": #d95700
   "primary": $hm-color,
-  "secondary": #F3F4F1 
+  // "secondary": #F3F4F1 
+  "secondary": grey 
 );
 
 $enable-rounded: false;
@@ -19,6 +20,10 @@ $body-bg: #200030;
 
 // Bootstrap Sass Imports
 @import "node_modules/bootstrap/scss/bootstrap";
+
+.bg-darkblue {
+  background-color: $body-bg;
+}
 
 .z2 {
   position: relative;
@@ -33,7 +38,7 @@ $body-bg: #200030;
 
 #sticky-sidebar {
   position:fixed;
-  // max-width: 5.7vw;
+  // max-width: 5.6vw;
   width: inherit;
   z-index: 1;
 }
@@ -65,6 +70,7 @@ html {
 
 .jumbotron-video{
   padding-top: 0;
+  margin-bottom: 0;
   position: relative;
     overflow: hidden;
     // min-height: 1000px;
@@ -119,18 +125,86 @@ html {
 }
 
 .first {
-  margin-top: -4vw;
+  margin-top: -5%;
   margin-left: 10vw;
   position: relative;
-  padding-top: 8vw;
-  padding-left: 8vw;
-  z-index: 2;
+  z-index: 3;
+  padding-bottom: 10%;
+}
+
+.last {
+  position: relative;
 }
 
 .first-text {
   font-size: 2rem;
+  padding-top: 8vh;
+  padding-left: 8vw;
+  padding-right:4vw;
 }
 
+.second {
+  position: relative;
+  margin-left: 4vw;
+  margin-top: -9%;
+  z-index: 4;
+}
+
+.third {
+  position: relative;
+  // margin-top: -8vh;
+  margin-top: -30%;
+  
+  margin-left: 50%; // tied with .sixth, 1-- - margin-right
+  margin-right: 0;
+  background-color: white;
+  z-index: 6;
+}
+
+.hm-spacing {
+  position: relative;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: -25%;
+  min-height: 20%;
+  z-index: 3;
+}
+
+.fifth {
+  position: relative;
+  margin-right: 0;
+  margin-left: 0;
+  z-index: 10;
+}
+
+.sixth {
+  position: relative;
+  margin-left: 0;
+  margin-right: 50%; // tied with .third, 100 - margin-left
+  
+  margin-top: -30%;
+  z-index: 12;
+}
+
+.seventh {
+  position: relative;
+  // margin-top: -8vh;
+  margin-top: -25%;
+  
+  margin-left: 30%; // tied with .sixth, 1-- - margin-right
+  margin-right: 0;
+  background-color: white;
+  z-index: 6;
+}
+
+.eighth {
+  position: relative;
+  margin-left: 0;
+  margin-right: 10%; // tied with .third, 100 - margin-left
+  
+  margin-top: -50%;
+  z-index: 12;
+}
 .menu {
   padding-left: 2vw;
   position: absolute;
@@ -230,6 +304,35 @@ html {
     opacity:0 !important;
 }
 
+.row-content {
+  padding-right: 5%;
+  padding-left: 4%;
+  padding-top: 5%;
+  padding-bottom: 1%;
+}
 
+.row-rock {
+  padding-left: 4%;
+  padding-top: 5%;
+  padding-bottom: 1%;
+}
 
+.flush-sides {
+  margin-left: 0px;
+  margin-right: 0px;
+  z-index: 3;
+  
+}
 
+.rock {
+  background-color: $primary;
+  height: 40%;
+}
+
+.last-text {
+  font-size: 2rem;
+}
+
+.hmlet-card-img {
+  padding: 20px;
+}
