@@ -5873,13 +5873,25 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
+.z2 {
+  position: relative;
+  background-color: #200030;
+  z-index: 2; }
+
+.z3 {
+  position: relative;
+  z-index: 3; }
+
 #sticky-sidebar {
   position: fixed;
-  width: 5.7vw;
-  z-index: 10; }
+  width: inherit;
+  z-index: 1; }
 
 html {
   background-color: #200030; }
+
+.white {
+  background-color: white; }
 
 .red {
   background-color: red; }
@@ -5920,7 +5932,7 @@ html {
   top: 50%;
   -webkit-transform: translate3d(-50%, -50%, 0);
   transform: translate3d(-50%, -50%, 0);
-  z-index: 1; }
+  z-index: 3; }
 
 .bottom {
   position: absolute;
@@ -5934,19 +5946,33 @@ html {
   z-index: 4; }
 
 .row-vid-choice {
-  margin-top: -16%;
-  margin-left: 37%;
-  margin-right: 8%;
-  z-index: 1;
-  position: relative; }
+  margin-top: -13vh;
+  margin-left: 20vw;
+  margin-right: 3vw;
+  position: relative;
+  z-index: 4; }
+
+.first {
+  margin-top: -4vw;
+  margin-left: 10vw;
+  position: relative;
+  padding-top: 8vw;
+  padding-left: 8vw;
+  z-index: 2; }
+
+.first-text {
+  font-size: 2rem; }
+
+.menu {
+  padding-left: 2vw;
+  position: absolute;
+  top: 5%;
+  outline: none; }
 
 .arrow {
+  padding-left: 2vw;
   position: absolute;
   bottom: 5%;
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
   z-index: 2; }
 
 @-webkit-keyframes blink {
@@ -5980,3 +6006,32 @@ html {
   -moz-animation-iteration-count: infinite;
   -o-animation: blink 1s;
   -o-animation-iteration-count: infinite; }
+
+.modal-content {
+  -webkit-border-radius: 0px !important;
+  -moz-border-radius: 0px !important;
+  border-radius: 0px !important; }
+
+.modal-dialog-custom {
+  top: 10vh;
+  padding-right: 42vw; }
+
+.tinted {
+  border-width: 0px;
+  -webkit-box-shadow: 0px 0px;
+  box-shadow: 0px 0px;
+  background-color: transparent;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, transparent), color-stop(100%, transparent));
+  background-image: -webkit-linear-gradient(270deg, transparent 0%, transparent 100%);
+  background-image: linear-gradient(180deg, transparent 0%, transparent 100%); }
+
+.modal-col {
+  padding-top: 3vh;
+  padding-bottom: 15vh; }
+
+.modal-list {
+  font-size: 2rem;
+  list-style-type: none; }
+
+.modal-backdrop {
+  opacity: 0 !important; }

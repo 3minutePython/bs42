@@ -16,9 +16,14 @@
       <div class="container">
         <div class="row no-gutters">
           <div class="col-1 no-gutters">
-            <div class="col-12" id="sticky-sidebar">
+            <div class="col-1" id="sticky-sidebar">
               <div class="jumbotron jumbotron-video jumbotron-fluid">
-                <div class="text-center arrow blink">
+                <a href="#" class="menu" data-toggle="modal" data-target="#homeModal">
+                  <img src="../assets/images/menu.svg" width="30" alt="">
+                </a>
+
+  
+                <div class="text-center arrow">
                   <a href="#" role="button">
                     <img src="../assets/images/arrow.svg" class="invert">
                   </a>
@@ -108,7 +113,16 @@
               </div>
             </div>
             
-            <div class="pl-5">
+            <div class="z3">
+              <div class="red first text-right">
+                <div class="first-text">
+                  --------Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, accusamus.
+                </div>
+              </div>
+              
+            </div>
+            
+            <div class="pl-5 z2">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -164,6 +178,79 @@
         </div>       
   </div>
 
+  <!-- Modal -->
+  <div class="modal fade" id="homeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <!-- <div class="modal-dialog modal-dialog-centered modal-lg" role="document"> -->
+    <div class="modal-dialog container modal-dialog-custom" role="document">
+      <div class="modal-content">
+        <!-- <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLongTitle">Modal title</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div> -->
+        <div class="modal-body ">
+          <div class="container">
+            <div class="row">
+              <div class="col-2 modal-col">
+                <a href="#" class="menu" data-toggle="modal" data-target="#homeModal">
+                  <img src="../assets/images/close.svg" width="30" alt="">
+                </a>
+
+  
+                <div class="text-center arrow">
+                  <a href="#" role="button">
+                    <img src="../assets/images/arrow.svg" class="invert">
+                  </a>
+                </div>
+              </div>
+              <div class="col-10 modal-col">
+                <ul class="modal-list">
+                  <li>
+                    Home  
+                  </li>
+                  <li>
+                    Locations  
+                    <ul class="modal-list">
+                      <li >
+                        Singapore
+                      </li>
+                      <li >
+                        Tokyo
+                      </li>
+                      <li >
+                        Hong Kong
+                      </li>
+                      
+                    </ul>
+                  </li>
+                  <li>
+                    Plans  
+                  </li>
+                  <li>
+                    Living Spaces  
+                  </li>
+                  <li>
+                    Community  
+                  </li>
+                  <li >
+                    Get in Touch  
+                  </li>
+                      </ul> 
+                
+                 </div>
+              
+            </div>
+            
+          </div>
+        </div>
+        <!-- <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save changes</button>
+        </div> -->
+      </div>
+    </div>
+  </div>
 
         <script src="/js/jquery.min.js"></script>
         <script src="/js/popper.min.js"></script>
