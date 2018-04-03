@@ -1,0 +1,338 @@
+
+// Variable Overrides 
+$hm-color: #F1753B;
+
+
+// Variable Overrides 
+// Variable Overrides 
+
+$enable-rounded: false;
+
+$theme-colors: (
+  // "primary": #d95700
+  "primary": $hm-color,
+  // "secondary": #F3F4F1 
+  "secondary": grey 
+);
+
+$enable-rounded: false;
+$body-bg: #200030;
+
+// Bootstrap Sass Imports
+@import "node_modules/bootstrap/scss/bootstrap";
+
+.bg-darkblue {
+  background-color: $body-bg;
+}
+
+.z2 {
+  position: relative;
+  background-color: $body-bg;
+  z-index: 2;
+}
+
+.z3 {
+  position: relative;
+  z-index: 3;
+}
+
+#sticky-sidebar {
+  position:fixed;
+  // max-width: 5.6vw;
+  width: inherit;
+  z-index: 1;
+}
+
+html {
+  background-color: $body-bg;
+}
+
+.white {
+  background-color: white;
+}
+.red {
+  background-color: red;
+}
+
+.blue {
+  background-color: blue;
+}
+.container{
+  max-width: 80em;
+  padding: 0;
+  margin-bottom: 0;
+}
+.invert {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+
+
+.jumbotron-video{
+  padding-top: 0;
+  margin-bottom: 0;
+  position: relative;
+    overflow: hidden;
+    // min-height: 1000px;
+    height: 41em;
+
+  /* Tried setting the height. Didnt work either */
+  /* height: 200px; */
+}
+
+.welcome-container {
+  position: relative;
+  top: 20%;
+  left: 6%;
+  // color: #ffffff;
+  z-index: 2;
+}
+
+#video-background{ 
+  position: absolute;
+  height: auto;
+  width: auto;
+  min-height: 100%;
+  min-width: 100%;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+  z-index: 3;
+}
+
+.bottom{
+  position: absolute;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+
+}
+
+.navbar {
+  z-index: 4;
+}
+
+.row-vid-choice {
+  margin-top: -13vh;
+  margin-left: 20vw;
+  margin-right: 3vw;
+  position:relative;
+  z-index: 4;
+  
+}
+
+.first {
+  margin-top: -5%;
+  margin-left: 10vw;
+  position: relative;
+  z-index: 3;
+  padding-bottom: 10%;
+}
+
+.last {
+  position: relative;
+}
+
+.first-text {
+  font-size: 2rem;
+  padding-top: 8vh;
+  padding-left: 8vw;
+  padding-right:4vw;
+}
+
+.second {
+  position: relative;
+  margin-left: 4vw;
+  margin-top: -9%;
+  z-index: 4;
+}
+
+.third {
+  position: relative;
+  // margin-top: -8vh;
+  margin-top: -30%;
+  
+  margin-left: 50%; // tied with .sixth, 1-- - margin-right
+  margin-right: 0;
+  background-color: white;
+  z-index: 6;
+}
+
+.hm-spacing {
+  position: relative;
+  margin-right: 0;
+  margin-left: 0;
+  margin-top: -25%;
+  min-height: 20%;
+  z-index: 3;
+}
+
+.fifth {
+  position: relative;
+  margin-right: 0;
+  margin-left: 0;
+  z-index: 10;
+}
+
+.sixth {
+  position: relative;
+  margin-left: 0;
+  margin-right: 50%; // tied with .third, 100 - margin-left
+  
+  margin-top: -30%;
+  z-index: 12;
+}
+
+.seventh {
+  position: relative;
+  // margin-top: -8vh;
+  margin-top: -25%;
+  
+  margin-left: 30%; // tied with .sixth, 1-- - margin-right
+  margin-right: 0;
+  background-color: white;
+  z-index: 6;
+}
+
+.eighth {
+  position: relative;
+  margin-left: 0;
+  margin-right: 10%; // tied with .third, 100 - margin-left
+  
+  margin-top: -50%;
+  z-index: 12;
+}
+.menu {
+  padding-left: 2vw;
+  position: absolute;
+  top: 5%;
+  outline: none;
+}
+.arrow {
+  padding-left: 2vw;
+  position: absolute;
+  bottom: 5%;
+  // margin-left: auto;
+  // margin-right: auto;
+  // left: 0;
+  // right: 0;
+  z-index: 2;
+  // margin-top: 50%
+  // margin-top: calc(100vh - 220)
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-o-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.blink {
+    -webkit-animation: blink 1s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: blink 1s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: blink 1s;
+    -o-animation-iteration-count: infinite;
+}
+
+.modal-content  {
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 0px !important; 
+}
+
+.modal-dialog-custom{
+  top: 10vh;
+  padding-right: 42vw;
+}
+
+.tinted {    
+    border-width: 0px;
+    -webkit-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;
+    background-color: rgba(0,0,0,0.0);
+    background-image: -webkit-gradient(linear, 50.00% 0.00%, 50.00% 100.00%, color-stop( 0% , rgba(0,0,0,0.00)),color-stop( 100% , rgba(0,0,0,0.00)));
+    background-image: -webkit-linear-gradient(270deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+    background-image: linear-gradient(180deg,rgba(0,0,0,0.00) 0%,rgba(0,0,0,0.00) 100%);
+}
+
+.modal-col {
+  padding-top: 3vh;
+  padding-bottom: 15vh;
+}
+
+.modal-list{
+  font-size: 2rem;
+  list-style-type: none;
+  
+}
+
+.modal-backdrop
+{
+    opacity:0 !important;
+}
+
+.row-content {
+  padding-right: 5%;
+  padding-left: 4%;
+  padding-top: 5%;
+  padding-bottom: 1%;
+}
+
+.row-rock {
+  padding-left: 4%;
+  padding-top: 5%;
+  padding-bottom: 1%;
+}
+
+.flush-sides {
+  margin-left: 0px;
+  margin-right: 0px;
+  z-index: 3;
+  
+}
+
+.rock {
+  background-color: $primary;
+  height: 40%;
+}
+
+.last-text {
+  font-size: 2rem;
+}
+
+.hmlet-card-img {
+  padding: 20px;
+}
