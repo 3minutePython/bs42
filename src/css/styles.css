@@ -5930,19 +5930,34 @@ html {
   z-index: 4; }
 
 .hmlet-slogan {
-  background-color: orange;
   margin-top: -5%;
   margin-right: 0;
   position: relative;
   font-size: 2rem;
   padding-bottom: 3%;
-  padding-top: 2em;
+  padding-top: 4em;
   padding-left: 12vw;
   padding-right: 4vw; }
 
 .hmlet-community-text {
   margin-top: 2em;
-  margin-left: -3vw; }
+  margin-left: -3vw;
+  margin-bottom: 2em;
+  padding: 50px; }
+
+.hmlet-values-text {
+  margin-top: 2em;
+  margin-right: -5vw;
+  padding: 50px; }
+
+.hmlet-values-img {
+  margin-right: -3vw; }
+
+.hmlet-events-text {
+  margin-top: 2em;
+  margin-left: -12vw;
+  margin-bottom: 2em;
+  padding: 50px; }
 
 .transparent {
   border-width: 0px;
