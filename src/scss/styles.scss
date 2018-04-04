@@ -10,7 +10,8 @@ $enable-rounded: false;
 $theme-colors: (
   "primary": $hm-color,
   // "secondary": #F3F4F1 
-  "secondary": grey 
+  "secondary": grey, 
+  "danger": $body-bg 
 );
 
 
@@ -26,10 +27,18 @@ html {
   background-color: grey;
 }
 
+.bg-lightgrey {
+  background-color: lightgrey;
+}
+.bg-fblue {
+  background-color: $body-bg;
+}
+
 .hmlet-container{
   min-width: 70vw;
   padding: 0;
   margin-bottom: 0;
+  overflow: hidden;
 }
 .hmlet-main {
   padding-left: 0;
@@ -117,9 +126,53 @@ html {
 .hmlet-events-text {
   margin-top: 2em;
   margin-left: -12vw;
+  // margin-bottom: 2em;
+  padding: 50px;
+}
+
+.hmlet-orange-slab {
+  height: 40em;  
+}
+
+.hmlet-plan-text {
+  margin-top: -32em;
+  // margin-right: -3vw;
   margin-bottom: 2em;
   padding: 50px;
 }
+
+.hmlet-plan-cards {
+  padding: 50px;  
+}
+
+.hmlet-plan-slogan {
+  padding-right: 50px;  
+}
+
+.hmlet-plan-slogan-text{
+  font-size: 2em;
+}
+
+.hmlet-plan-card-body {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.btn-hmlet-plan-cards {
+  color: white;
+  background-color: $body-bg;
+  border-color: white;
+}
+
+.hmlet-carousel {
+  margin-right: -200px;
+}
+
+.hmlet-carousel-card-pic {
+  border-radius: 50%; 
+}
+
+
 
 // customs
 .transparent {    
